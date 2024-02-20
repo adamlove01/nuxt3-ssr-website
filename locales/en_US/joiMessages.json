@@ -1,0 +1,24 @@
+{
+  "joiMessages": {
+    "any_required": "The {field} field is required.",
+    "boolean_base": "The {field} must be boolean.",
+    "date_base": "The {field} must be a date.",
+    "date_empty": "The {field} field is required.",
+    "date_required": "The {field} field is required.",
+    "number_base": "The {field} must be a number.",
+    "number_empty": "The {field} field is required.",
+    "number_greater": "The {field} must be greater than {limit}.",
+    "number_integer": "The {field} must be an integer.",
+    "number_less": "The {field} must be less than {limit}.",
+    "number_required": "The {field} is required.",
+    "string_base": "The {field} must be a string.",
+    "string_email": "The {field} must be an email address",
+    "string_empty": "The {field} field is required.",
+    "string_max": "The {field} cannot have more than {limit} characters.",
+    "string_min": "The {field} must have at least {limit} characters.",
+    "string_pattern.base": "The {field} has invalid characters.",
+    "string_required": "The {field} is required.",
+    "string_valid": "The {field} is invalid.",
+    "error": "errorCode {field} does not exist."
+  }
+}

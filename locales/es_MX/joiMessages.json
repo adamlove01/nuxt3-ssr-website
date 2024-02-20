@@ -1,0 +1,24 @@
+{
+  "joiMessages": {
+    "any_required": "El campo {field} es obligatorio.",
+    "boolean_base": "El {field} debe ser booleano.",
+    "date_base": "El {field} debe ser una fecha.",
+    "date_empty": "El campo {field} es obligatorio.",
+    "date_required": "El campo {field} es obligatorio.",
+    "number_base": "El {field} debe ser un número.",
+    "number_empty": "El campo {field} es obligatorio.",
+    "number_greater": "El {field} debe ser mayor que {limit}.",
+    "number_integer": "El {field} debe ser un número entero.",
+    "number_less": "El {field} debe ser menor que {limit}.",
+    "number_required": "El {field} es obligatorio.",
+    "string_base": "El {field} debe ser una cadena de texto.",
+    "string_email": "El {field} debe ser una dirección de correo electrónico.",
+    "string_empty": "El campo {field} es obligatorio.",
+    "string_max": "El {field} no puede tener más de {limit} caracteres.",
+    "string_min": "El {field} debe tener al menos {limit} caracteres.",
+    "string_pattern.base": "El {field} tiene caracteres inválidos.",
+    "string_required": "El {field} es obligatorio.",
+    "string_valid": "El {field} no es válido.",
+    "error": "El código de error {field} no existe."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "users": {
+    "addNewUser": "Agregar Nuevo Usuario",
+    "atLeast": "Al menos {limit} caracteres",
+    "editUser": "Editar Usuario",
+    "deleteUser": "¿Eliminar Este Usuario?"
+  }
+}

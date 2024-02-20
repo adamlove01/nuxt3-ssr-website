@@ -1,0 +1,27 @@
+{
+  "all": {
+    "website": "Your Website",
+    "titles": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "contactUs": "Contact Us",
+      "signIn": "Sign in",
+      "signOut": "Sign out",
+      "admin": "Admin",
+      "register": "Register",
+      "account": "Account"
+    },
+    "buttons": {
+      "ok": "OK",
+      "signIn": "Sign In",
+      "send": "Send",
+      "cancel": "Cancel",
+      "signUpNow": "Sign up now!",
+      "save": "Save"
+    },
+    "alerts": {
+      "emailSent": "Email sent!"
+    }
+  }
+}

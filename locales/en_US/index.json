@@ -1,0 +1,119 @@
+{
+  "index": {
+    "hero": {
+      "title": "Hello!",
+      "subTitle": "This could be your website."
+    },
+    "technology": {
+      "title": "Your Website.",
+      "subTitle": "Built with the latest technology.",
+      "buttonText": "Learn More",
+      "cards": [
+        {
+          "title": "Nuxt 3 (SSR)",
+          "subTitle": "A popular framework for creating Vue.js applications.",
+          "image": "/img/logo-nuxt.png",
+          "href": "https://nuxtjs.org/"
+        },
+        {
+          "title": "Vuetify 3",
+          "subTitle": "The Material Design CSS framework for fantastic UI/UX.",
+          "image": "/img/logo-vuetify.png",
+          "href": "https://vuetifyjs.com/en/"
+        },
+        {
+          "title": "Nitro Server",
+          "subTitle": "Nuxt 3's Built-in universal server engine with API routing.",
+          "image": "/img/logo-nitro.png",
+          "href": "https://nuxt.com/docs/guide/concepts/server-engine"
+        },
+        {
+          "title": "H3 Framework",
+          "subTitle": "Nuxt 3's Nitro server internally uses H3 handlers & helpers.",
+          "image": "/img/logo-h3.png",
+          "href": "https://www.jsdocs.io/package/h3"
+        },
+        {
+          "title": "Knex.js",
+          "subTitle": "The awesome SQL query builder for Postgres, MariaDB & more.",
+          "image": "/img/logo-knex.png",
+          "href": "http://knexjs.org/"
+        },
+        {
+          "title": "Joi Validation",
+          "subTitle": "The most powerful validation library for Javascript.",
+          "image": "/img/logo-joi.png",
+          "href": "https://joi.dev/api/?v=17.4.0"
+        }
+      ]
+    },
+    "benefitsIcons": {
+      "title": "Great Features",
+      "subTitle": "To get you up and running in no time.",
+      "cards": [
+        {
+          "title": "Professional UI",
+          "subTitle": "Trendy design and user-friendly interface",
+          "icon": "mdi-gesture-double-tap",
+          "iconColor": "blue"
+        },
+        {
+          "title": "Mobile-friendly Nav",
+          "subTitle": "Adjusts to any screen size with nice menus",
+          "icon": "mdi-cellphone-text",
+          "iconColor": "orange darken-1"
+        },
+        {
+          "title": "Well Documented",
+          "subTitle": "Heavily-commented code and READMEs for every file",
+          "icon": "mdi-text-box-check-outline",
+          "iconColor": "green accent-4"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Great Features",
+      "subTitle": "To get you up and running in no time.",
+      "cards": [
+        {
+          "title": "Helmet.js",
+          "subTitle": "Adds security-related HTTP response headers to prevent attacks like ClickJacking, sniffing attacks and more."
+        },
+        {
+          "title": "Content Security Policy (CSP)",
+          "subTitle": "An added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection."
+        },
+        {
+          "title": "Sanitized & Validated input",
+          "subTitle": "All input on both the client and server is sanitized & validated using the powerful Joi validation and sanitize-html libraries."
+        },
+        {
+          "title": "Login Captcha",
+          "subTitle": "SVG Captcha prevents bots from spamming your login page. The captcha randomly shows text or a math problem to keep bots guessing."
+        },
+        {
+          "title": "User Access List",
+          "subTitle": "Controls access to all pages and routes based on user type. You can change access rules for any page or server route from a single file."
+        },
+        {
+          "title": "Secure JSON WebTokens",
+          "subTitle": "Uses JWT to verify login. The accessToken is stored in memory (VUEX) and the refreshToken is HttpOnly with 'expires' and 'sameSite' flags."
+        }
+      ]
+    },
+    "alerts": {
+      "loggedIn": {
+        "type": "success",
+        "text": "You are signed in."
+      },
+      "loggedOut": {
+        "type": "success",
+        "text": "You are signed out."
+      },
+      "error": {
+        "type": "error",
+        "text": "Sorry, there was an error. Please try again."
+      }
+    }
+  }
+}

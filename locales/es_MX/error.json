@@ -1,0 +1,11 @@
+{
+  "error": {
+    "pageNotFound": "Oops, esta página no existe.",
+    "notAuthorized": "No autorizado",
+    "pageBroken": "Oops, esta página está rota.",
+    "error": "Error:",
+    "unknownError": "Error desconocido",
+    "tryAgainLater": "Por favor, inténtalo de nuevo más tarde",
+    "GoToHomePage": "Volver a la página de inicio"
+  }
+}

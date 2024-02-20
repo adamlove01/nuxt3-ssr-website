@@ -1,0 +1,27 @@
+{
+  "all": {
+    "website": "Tu Sitio Web",
+    "titles": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "contact": "Contacto",
+      "contactUs": "Contáctanos",
+      "signIn": "Iniciar sesión",
+      "signOut": "Cerrar sesión",
+      "admin": "Admin",
+      "register": "Registrar",
+      "account": "Cuenta"
+    },
+    "buttons": {
+      "ok": "OK",
+      "signIn": "Iniciar sesión",
+      "send": "Enviar",
+      "cancel": "Cancelar",
+      "signUpNow": "¡Regístrate ahora!",
+      "save": "Guardar"
+    },
+    "alerts": {
+      "emailSent": "¡Correo electrónico enviado!"
+    }
+  }
+}

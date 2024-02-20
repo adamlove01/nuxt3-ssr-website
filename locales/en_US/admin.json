@@ -1,0 +1,60 @@
+{
+  "admin": {
+    "usersList": "Users List",
+    "pages": "Pages:",
+    "headers": [
+      {
+        "title": "Name",
+        "key": "name",
+        "align": "start",
+        "minWidth": "200px",
+        "fixed": true
+      },
+      {
+        "title": "Email",
+        "key": "email"
+      },
+      {
+        "title": "Role",
+        "key": "role"
+      },
+      {
+        "title": "Status",
+        "key": "status"
+      },
+      {
+        "title": "Actions",
+        "key": "actions",
+        "align": "end",
+        "minWidth": "100px",
+        "sortable": false
+      }
+    ],
+    "itemsPerPageText": "Items per page:",
+    "itemsPerPageOptions": [
+      { "value": 10, "title": "10" },
+      { "value": 25, "title": "25" },
+      { "value": 50, "title": "50" },
+      { "value": -1, "title": "$vuetify.dataFooter.itemsPerPageAll" }
+    ],
+    "columns": [
+      {
+        "title": "Name",
+        "value": "name"
+      },
+      {
+        "title": "Email",
+        "value": "email"
+      },
+      {
+        "title": "Role",
+        "value": "role"
+      },
+      {
+        "title": "Status",
+        "value": "status"
+      }
+    ],
+    "columnSearchPlaceholder": "Select any columns"
+  }
+}

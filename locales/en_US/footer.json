@@ -1,0 +1,16 @@
+{
+  "footer": {
+    "rights": "All rights reserved",
+    "pageLinks": [
+      { "text": "Home", "to": "/" },
+      { "text": "About", "to": "/about" },
+      { "text": "Contact", "to": "/contact" }
+    ],
+    "socialLinks": [
+      { "icon": "mdi-facebook", "href": "https://facebook.com" },
+      { "icon": "mdi-twitter", "href": "https://twitter.com" },
+      { "icon": "mdi-linkedin", "href": "https://linkedin.com" },
+      { "icon": "mdi-instagram", "href": "https://instagram.com" }
+    ]
+  }
+}

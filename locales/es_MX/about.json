@@ -1,0 +1,47 @@
+{
+  "about": {
+    "who": {
+      "title": "Quiénes Somos",
+      "text": "<p>Somos un equipo dinámico apasionado por crear soluciones significativas. Con un compromiso con la excelencia, abrazamos la creatividad y la colaboración para ofrecer resultados excepcionales. Nuestro enfoque en la innovación y la integridad define nuestro carácter, y nos enorgullece tener un impacto positivo en el mundo que nos rodea. Únete a nosotros mientras emprendemos un viaje para redefinir posibilidades y dar forma a un futuro mejor.</p> <p>Guiados por valores compartidos, nuestro diverso equipo aporta perspectivas y experiencia únicas. Juntos, fomentamos un entorno inclusivo que promueve el crecimiento, la innovación y el apoyo mutuo. Descubre la fortaleza de nuestra unidad y el poder transformador de nuestra visión compartida. Bienvenido a nuestra comunidad donde el propósito se encuentra con la pasión.</p>"
+    },
+    "what": {
+      "title": "Lo Que Hacemos",
+      "text": "<p>Nos especializamos en desarrollar soluciones a medida que abordan desafíos complejos y generan éxito. Nuestro enfoque estratégico combina tecnología de vanguardia con pensamiento creativo para ofrecer resultados impactantes. Ya sea pionerando productos innovadores o implementando estrategias efectivas de marketing, estamos dedicados a marcar la diferencia.</p><p>En el núcleo de nuestro trabajo está el compromiso de entender las necesidades únicas de nuestros clientes y superar sus expectativas. Nuestro equipo colaborativo de expertos garantiza una ejecución de proyectos sin problemas, convirtiendo ideas en realidad. Únete a nosotros para dar forma a un futuro donde las posibilidades son ilimitadas y la innovación no conoce límites.</p>"
+    },
+    "team": {
+      "heroTitle": "",
+      "cards": [
+        {
+          "title": "Emily Carter",
+          "subTitle": "Directora Ejecutiva y Fundadora",
+          "image": "/img/users/female.png"
+        },
+        {
+          "title": "Jacob Thompson",
+          "subTitle": "Director de Tecnología (CTO)",
+          "image": "/img/users/male.png"
+        },
+        {
+          "title": "Olivia Miller",
+          "subTitle": "Directora de Marketing",
+          "image": "/img/users/female.png"
+        },
+        {
+          "title": "Liam Brooks",
+          "subTitle": "Director Financiero",
+          "image": "/img/users/male.png"
+        },
+        {
+          "title": "Sophia Garcia",
+          "subTitle": "Gerente de Recursos Humanos",
+          "image": "/img/users/female.png"
+        },
+        {
+          "title": "Noah Bennett",
+          "subTitle": "Líder de Desarrollo de Productos",
+          "image": "/img/users/male.png"
+        }
+      ]
+    }
+  }
+}

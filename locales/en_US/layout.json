@@ -1,0 +1,44 @@
+{
+  "layout": {
+    "language": "Language",
+    "en_US": "English (US)",
+    "es_MX": "Spanish (MX)",
+    "signIn": {
+      "title": "Sign In",
+      "to": "/login",
+      "icon": "mdi-login"
+    },
+    "admin": {
+      "title": "Admin",
+      "to": "/admin",
+      "icon": "mdi-cog"
+    },
+    "guestItems": [
+      {
+        "title": "Home",
+        "to": "/",
+        "icon": "mdi-home"
+      },
+      {
+        "title": "About",
+        "to": "/about",
+        "icon": "mdi-exclamation"
+      },
+      {
+        "title": "Contact",
+        "to": "/contact",
+        "icon": "mdi-email"
+      }
+    ],
+    "account": {
+      "title": "My Account",
+      "to": "/account",
+      "icon": "mdi-account"
+    },
+    "signOut": {
+      "title": "Sign Out",
+      "to": "/logout",
+      "icon": "mdi-logout"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "fields": {
+    "id": "Id",
+    "name": "Nombre",
+    "fullName": "Nombre Completo",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "image": "Imagen",
+    "role": "Rol",
+    "status": "Estado",
+    "route": "Ruta",
+    "accessToken": "Token de acceso",
+    "refreshToken": "Token de actualización",
+    "token": "Token",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "user": "Usuario",
+    "users": "Usuarios",
+    "account": "Cuenta",
+    "adminName": "Nombre de 'Admin'",
+    "search": "Buscar",
+    "roles": {
+      "client": "Cliente",
+      "admin": "Admin"
+    },
+    "roleSelect": [
+      { "title": "Cliente", "value": "client" },
+      { "title": "Admin", "value": "admin" }
+    ],
+    "statuses": {
+      "active": "Activo",
+      "pending": "Pendiente",
+      "inactive": "Inactivo"
+    },
+    "statusSelect": [
+      { "title": "Activo", "value": "active" },
+      { "title": "Pendiente", "value": "pending" },
+      { "title": "Inactivo", "value": "inactive" }
+    ]
+  }
+}

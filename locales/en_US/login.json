@@ -1,0 +1,7 @@
+{
+  "login": {
+    "signIn": "Please sign in.",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "No account?"
+  }
+}

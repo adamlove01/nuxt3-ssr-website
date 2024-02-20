@@ -1,0 +1,8 @@
+{
+  "users": {
+    "addNewUser": "Add New User",
+    "atLeast": "At least {limit} characters",
+    "editUser": "Edit User",
+    "deleteUser": "Delete This User?"
+  }
+}

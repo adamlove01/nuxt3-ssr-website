@@ -1,0 +1,11 @@
+{
+  "error": {
+    "pageNotFound": "Oops, this page is extinct.",
+    "notAuthorized": "Not Authorized",
+    "pageBroken": "Oops, this page is broken.",
+    "error": "Error:",
+    "unknownError": "Unknown Error",
+    "tryAgainLater": "Please try again later",
+    "GoToHomePage": "Go back to home page"
+  }
+}
