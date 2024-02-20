@@ -1,41 +1,37 @@
-# Nuxt SSR Secure Website
+# Nuxt3 SSR Website
 
-<img src="/docs/app-screenshot.png" />
+<img src="public/docs/app-screenshot.png" />
 <br><br>
 
-## Demo
+## Features
 
-[Project demo - https://demo.olbworld.org](https://demo.olbworld.org/)
+This project is a secure, production-ready website. It has:
 
-## Overview
+- Themes: Light and Dark mode 
+- Full Translation: with all text in `/locales` folder
+- Route Guards: using client and server middleware - routes and roles
+- Nav: with mobile-friendly menus
+- Login: JWT server-side HTTPS-only
+- Admin page: Users table with create, read, update & delete 
+- Security: Validation of all input client & server, best practices throughout.
+- Shared Code: Between client and server -- validation, authorization, translation, schemas
 
-This project is a basic, secure, production-ready website. It has:
-
-- A Landing page with modern UI and sample sections
-- Nav with mobile-friendly menus
-- Email registration and login
-- Admin page with create, read, update & delete operations
-- Security best practices throughout.
-
-The code is clear and fully commented so you can easily customize it for your own purposes.
-
-You can also use the project as a base for your own code demo that requires Nuxt, Node.js and/or Express.
+The code is clear with comments so you can easily customize it for your own purposes.
 
 ## Technology
 
-- [**Nuxt.js**](https://nuxtjs.org/) - A framework for creating Vue.js applications.
-- [**Express**](https://expressjs.com/) - The Node.js server framework you know and love.
+- [**Nuxt.js**](https://nuxt.com/) - A framework for creating Vue.js applications.
+- [**Nitro**](https://nuxt.com/docs/guide/concepts/server-engine) - The built-in Nuxt3 server framework.
 - [**Vuetify**](https://vuetifyjs.com/en/) - The Material Design CSS framework for fantastic UI/UX.
+- [**Pinia**](https://pinia.vuejs.org/) - The state management store for VueJS.
 - [**Knex.js**](http://knexjs.org/) - SQL query builder for Postgres, MariaDB & more.
-- [**Joi Validation**](https://joi.dev/api/?v=17.4.0) - A Data validation library for Javascript.
-- [**Node ES Modules**](https://blog.logrocket.com/es-modules-in-node-today/) - Share code between the Vue client and the Express server.
+- [**Joi Validation**](https://joi.dev/api/?v=17.12.0) - A Data validation library for Javascript.
+- [**TailwindCSS**](https://tailwindcss.com/docs/installation) - CSS classes to fill in the gaps of Vuetify
+
 
 ## Security Features
 
-- **Helmet.js** - Adds security-related HTTP response headers to prevent attacks like ClickJacking, sniffing attacks and more.
-- **Content Security Policy (CSP)** - An added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection.
 - **Sanitized & Validated input** - All input on both the client and server is sanitized & validated using the powerful Joi validation and sanitize-html libraries.
-- **Login Captcha** - SVG Captcha prevents bots from spamming your login page. The captcha randomly shows text or a math problem to keep bots guessing.
 - **User Access List** - Controls access to all pages and routes based on user type. You can change access rules for any page or server route from a single file.
 - **Secure JSON WebTokens** - Uses JWT to verify login. The accessToken stored in memory (Vuex) and the refreshToken is HttpOnly with 'expires' and 'sameSite' flags.
 
@@ -48,15 +44,9 @@ You can also use the project as a base for your own code demo that requires Nuxt
 
 **Clone Project and Install Dependencies**
 
-`git clone https://github.com/adamlove01/nuxt-ssr-secure-website.git`  
-`cd nuxt-ssr-secure-website`  
+`git clone https://github.com/adamlove01/nuxt3-ssr-website.git`  
+`cd nuxt3-ssr-website`  
 `npm install`
-
-## Development Environment
-
-This project was built using Vscode with [Vetur](https://flaviocopes.com/vue-vscode/#linting-and-error-checking), [Eslint](https://www.npmjs.com/package/eslint) and [Prettier](https://www.npmjs.com/package/prettier). If you wish to use a similar setup, you can follow this guide:
-
-[Vscode Setup - Vetur, Eslint, Prettier](docs/vscode.md)
 
 ## Set up a local database
 
@@ -81,13 +71,13 @@ Exit psql
 ## Install a Node.js database driver in your project
 
 For postgres, 'pg' is already installed. If you are using another database, for example MariaDB or MySQL, use can uninstall 'pg' and install 'mysql' connector instead:  
-`cd nuxt-ssr-secure-website`  
+`cd nuxt3-ssr-website`  
 `npm install mysql`
 
 ## Create an .env file
 
 The `.env` file defines your environment variables for the project.  
-`cd nuxt-ssr-secure-website`  
+`cd nuxt3-ssr-website`  
 `touch .env`
 
 Add your database connection information that you created above. The default DB_PORT will depend on which database you use. DB_CLIENT is the database connector from above.
@@ -117,37 +107,30 @@ DB_CHARSET='utf8'
 The migration files are in the `/database/migrations` folder. They create tables in your existing database.
 
 `cd nuxt-ssr-secure-website`  
-`npx knex migrate:latest --knexfile knexfile.cjs`  
+`npx knex migrate:latest`  
 If you installed Knex globally (npm install knex -g)  
-`knex migrate:latest --knexfile knexfile.cjs`
+`knex migrate:latest`
 
 **Seeds**  
 The seed files are in the `/databse/seeds` folder. They add data to your tables.
 
 `cd nuxt-ssr-secure-website`  
-`npx knex seed:run --knexfile knexfile.cjs`  
+`npx knex seed:run`  
 If you installed Knex globally (npm install knex -g)  
-`knex seed:run --knexfile knexfile.cjs`
+`knex seed:run`
 
 ## Start up the local server with hot reload
 
-`cd nuxt-ssr-secure-website`  
+`cd nuxt3-ssr-website`  
 `npm run dev`
-
-When you see
-
-```
-✓ Client
-✓ Server
-```
 
 go to `localhost:3000` in your browser to see the project running.
 
 ## Admin login
 
 By default you can log in as an Admin user:  
-Email: `admin@admin.com`  
-Password: `beautifulHorseHippoAlgebra===9632`
+Email: `admin@mydomain.com`  
+Password: `admin123`
 
 You should create a new admin user and then delete the default one when you go to production!
 
@@ -191,15 +174,15 @@ DB_CHARSET='utf8'
 ...
 ```
 
-BROWSER_BASE_URL is for Axios calls (configured in nuxt.config.js) and should match your domain url.
+BROWSER_BASE_URL should match your domain url.
 
 BASE_URL should be http://localhost:3000 if you are running your site behind NGINX, otherwise it should also match your domain url.
 
 **Run migrations and seeds**
 
 `cd [project root]`  
-`[npx?] knex migrate:latest --knexfile knexfile.cjs`  
-`[npx?] knex seed:run --knexfile knexfile.cjs`
+`[npx?] knex migrate:latest`  
+`[npx?] knex seed:run`
 
 **Build the project**
 
@@ -215,42 +198,6 @@ Note that `npm run start` will run the app in your terminal, but when you close 
 You will want your app to restart automatically if your server is restarted. On most Linux systems, you can configure systemd to auto-start your app. To do that, you can follow this guide:
 
 [Set up systemd to autostart](docs/systemd.md)
-
-## knexfile.cjs
-
-This file contains your database configuration. All the values are imported from your `.env` file.
-
-## nuxt.config.js
-
-This file contains the configuration for the NuxtJS framework.
-
-## JSON WebTokens
-
-The login system in this app uses JSON WebTokens to verify login.
-
-**The AccessToken**
-
-This token is stored in-memory in Vuex and expires in 15 minutes. We are using Vuex for this data because other solutions such as client-side Cookies or localStorage are considered a security risk -- they are javascript-accessible and can be hacked.
-
-**The refreshToken**
-
-Login status (as verified by the 'authorize' middleware) is persisted (after page refresh, opening a new tab, or accessToken expiry) by an HTTPOnly 'refreshToken' cookie, which is set server-side. This cookie has a 7-day expiry and is not accessible via javascript.
-
-If the user has disabled cookies in their browser, they can still remain logged in for 15 minutes (the expiry of the accessToken in the Vuex store) as long as they do not refresh the page or open a new tab. This is a good trade-off, since very few users will have cookies disabled. The accessToken has only 15 minute expiry to make it very difficult for hackers.
-
-## More Features Coming Soon
-
-- [x] Login: Add forgot password / Reset password logic
-- [x] Contact Us page
-- [x] Footer Section
-- [ ] Privacy and Terms of Service pages
-- [ ] More Section components
-- [ ] Winston and Morgan logging
-- [ ] Server-side pagination and filtering
-- [ ] Newsletter signup widget
-- [ ] Youtube videos for the project: Code walkthrough
-- [ ] Docs: NGINX configuration
-- [ ] Docs: Explanation of variables in nuxt.config.js
 
 ## Author
 
