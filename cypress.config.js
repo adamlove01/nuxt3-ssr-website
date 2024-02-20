@@ -1,9 +1,4 @@
-// cypress.config.ts
-// import { defineConfig } from "cypress";
-// import { loadNuxt, buildNuxt } from "@nuxt/kit";
-
 const { defineConfig } = require('cypress')
-// const { loadNuxt, buildNuxt } = require('@nuxt/kit"')
 require('dotenv').config()
 
 async function getNuxtViteConfig() {
