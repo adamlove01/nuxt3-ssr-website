@@ -1,8 +1,7 @@
 <template>
   <v-container
-    class="section-text"
-    :style="`background-color: ${backgroundColor}; 
-    ${backgroundImage ? `background-image: url('${backgroundImage}')` : ''}`"
+    class="min-h-[400px] border-b-[1px] border-solid border-my-light-blue bg-cover"
+    :style="`background-color: ${backgroundColor}; background-image: url('${backgroundImage}')`"
     fluid
   >
     <v-container class="py-10">
@@ -63,14 +62,6 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-@import 'styles.scss';
-
-.section-text {
-  min-height: 400px;
-  border-bottom: 1px $light-blue solid;
-  background-size: cover;
-}
-
 :deep(p) {
   margin-bottom: 20px;
 }

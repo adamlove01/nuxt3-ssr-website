@@ -19,9 +19,6 @@ export default defineEventHandler(async (event) => {
   // Error: User with that email not found
   if (row.length < 1) return response('error, notFoundEntered, email')
 
-  console.log('v.email=', v.email)
-  console.log('row=', JSON.stringify(row))
-
   const r = row[0]
 
   // Compare submitted password with password in DB
@@ -41,8 +38,6 @@ export default defineEventHandler(async (event) => {
   const user = { id: r.id, email: r.email, name: r.name, role: r.role }
   let tokenData = user
 
-  console.log('user=', user)
-
   // Create accessToken for the store. Randomize so tokens are unique.
   tokenData.rand = Math.floor(Math.random() * 10000000)
   const key = config.TOKEN_AUTH_SECRET
@@ -57,9 +52,6 @@ export default defineEventHandler(async (event) => {
     expiresIn: '7 days',
   })
 
-  console.log('refreshToken=', refreshToken)
-  console.log('BROWSER_BASE_URL=', config.BROWSER_BASE_URL)
-
   // Create cookie. 'maxAge' must be the same as 'expiresIn' above (in seconds)
   await setCookie(event, 'refreshToken', refreshToken, {
     path: '/',
@@ -71,8 +63,6 @@ export default defineEventHandler(async (event) => {
 
   const test = await getCookie(event, 'refreshToken')
   const testParse = parseCookies(event)
-  console.log('useCookie=', JSON.stringify(test))
-  console.log('testParse=', JSON.stringify(testParse))
 
   // Return accessToken and user data, to be inserted into the store
   return response('success, loggedIn, user', { token: accessToken, user: user })

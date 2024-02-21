@@ -11,7 +11,7 @@
       "cards": [
         {
           "title": "Nuxt 3 (SSR)",
-          "subTitle": "Un marco popular para crear aplicaciones Vue.js.",
+          "subTitle": "Un marco de trabajo popular para crear aplicaciones Vue.js, con renderización del lado del servidor.",
           "image": "/img/logo-nuxt.png",
           "href": "https://nuxt.com/"
         },
@@ -28,10 +28,10 @@
           "href": "https://nuxt.com/docs/guide/concepts/server-engine"
         },
         {
-          "title": "H3 Framework",
-          "subTitle": "El servidor Nitro de Nuxt 3 utiliza internamente manejadores y ayudantes de H3.",
-          "image": "/img/logo-h3.png",
-          "href": "https://www.jsdocs.io/package/h3"
+          "title": "Tienda Pinia",
+          "subTitle": "Tienda intuitiva y flexible para la gestión del estado de Vue.",
+          "image": "/img/logo-pinia.png",
+          "href": "https://pinia.vuejs.org/"
         },
         {
           "title": "Knex.js",
@@ -52,13 +52,13 @@
       "subTitle": "Para poner en marcha tu proyecto en poco tiempo.",
       "cards": [
         {
-          "title": "Interfaz de Usuario Profesional",
+          "title": "Profesional",
           "subTitle": "Diseño moderno e interfaz fácil de usar",
           "icon": "mdi-gesture-double-tap",
           "iconColor": "blue"
         },
         {
-          "title": "Navegación Adaptada a Dispositivos Móviles",
+          "title": "Adaptable móviles",
           "subTitle": "Se ajusta a cualquier tamaño de pantalla con menús atractivos",
           "icon": "mdi-cellphone"
         },
@@ -71,32 +71,24 @@
       ]
     },
     "benefits": {
-      "title": "Grandes Características",
-      "subTitle": "Para que estés en marcha en poco tiempo.",
+      "title": "Seguridad del Sitio",
+      "subTitle": "Te tenemos cubierto.",
       "cards": [
         {
-          "title": "Helmet.js",
-          "subTitle": "Añade encabezados de respuesta HTTP relacionados con la seguridad para prevenir ataques como ClickJacking, ataques de olfateo y más."
-        },
-        {
-          "title": "Directiva de Seguridad de Contenido (CSP)",
+          "title": "Seguridad del contenido",
           "subTitle": "Una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques, incluyendo Cross Site Scripting (XSS) e inyección de datos."
         },
         {
-          "title": "Entrada Sanitizada y Validada",
-          "subTitle": "Toda la entrada, tanto en el cliente como en el servidor, se sanea y valida utilizando las potentes bibliotecas de validación Joi y sanitize-html."
+          "title": "Entrada validada",
+          "subTitle": "Toda entrada, tanto en el cliente como en el servidor, se sanea y valida utilizando las potentes bibliotecas de validación Joi y sanitize-html."
         },
         {
-          "title": "Captcha de Inicio de Sesión",
-          "subTitle": "El Captcha SVG evita que los bots spammeen tu página de inicio de sesión. El Captcha muestra aleatoriamente texto o un problema matemático para mantener adivinando a los bots."
+          "title": "Lista de acceso",
+          "subTitle": "Controla el acceso a todas las páginas y rutas basado en el rol del usuario. Puedes cambiar las reglas de acceso para cualquier página o ruta del servidor desde un solo archivo."
         },
         {
-          "title": "Lista de Acceso de Usuario",
-          "subTitle": "Controla el acceso a todas las páginas y rutas según el tipo de usuario. Puedes cambiar las reglas de acceso para cualquier página o ruta del servidor desde un solo archivo."
-        },
-        {
-          "title": "JSON WebTokens Seguros",
-          "subTitle": "Utiliza JWT para verificar el inicio de sesión. El accessToken se almacena en la memoria (VUEX) y el refreshToken es HttpOnly con las banderas 'expires' y 'sameSite'."
+          "title": "Inicio seguro",
+          "subTitle": "Utiliza JWT del lado del servidor para verificar las credenciales de inicio de sesión y crear tokens de sesión seguros."
         }
       ]
     },

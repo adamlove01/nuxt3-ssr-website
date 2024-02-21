@@ -5,9 +5,9 @@
     :style="`background-image: url('${backgroundImage}')`"
     fluid
   >
-    <v-container class="py-12">
+    <v-container class="py-8">
       <div class="ma-auto">
-        <div v-if="title" class="text-h2 text-center mb-4">
+        <div v-if="title" class="text-h2 text-center mb-2">
           {{ title }}
         </div>
         <div v-if="subTitle" class="text-h4 text-center mb-12">
@@ -21,15 +21,16 @@
               v-bind="props"
               :class="{ 'on-hover': isHovering }"
               class="d-flex flex-no-wrap justify-space-between pa-6"
-              :style="{ height: '100%', maxWidth: '700px', margin: 'auto' }"
+              :style="{ height: '100%', maxWidth: '700px', margin: 'auto', border: '1px solid #3dbbfe' }"
             >
               <div>
-                <v-card-title class="title-styles pt-3">
+                <v-card-title class="text-h4 pt-3">
                   {{ card.title }}
                 </v-card-title>
 
                 <v-card-text
-                  class="subtitle-styles text-body-1 pr-0"
+                  class="min-h-[66px] text-h6 pr-0"
+                  style="line-height: 1.8rem"
                   v-html="card.subTitle"
                 >
                 </v-card-text>
@@ -39,9 +40,10 @@
                     :to="card.href"
                     target="_blank"
                     class="mx-2 text-h6"
-                    :style="{
-                      color: session.theme === 'dark' ? '#3dbbfe' : '#B35C00',
-                    }"
+                    :class="[
+                      session.theme === 'dark' ? 'text-my-light-blue hover:text-my-blue' : 'text-my-blue hover:text-my-light-blue',
+                    ]"
+
                   >
                     {{ buttonText }}
                     <v-icon icon="mdi-chevron-right" />
@@ -54,9 +56,7 @@
                 size="125"
                 rounded="1"
                 color="white"
-                :style="{
-                  borderColor: session.theme === 'dark' ? '#3dbbfe' : '#3dbbfe',
-                }"
+                style="border: 1px solid #3dbbfe"
                 :image="card.image"
               />
             </v-card>
@@ -95,23 +95,3 @@ const props = defineProps({
   },
 })
 </script>
-
-<style lang="scss" scoped>
-@import 'styles.scss';
-
-  .v-card {
-    border: 1px $light-blue solid;
-
-    .title-styles {
-      font-size: 40px;
-    }
-
-    .subtitle-styles {
-      min-height: 66px;
-    }
-
-    .v-avatar {
-      border: 1px $light-blue solid;
-    }
-  }
-</style>

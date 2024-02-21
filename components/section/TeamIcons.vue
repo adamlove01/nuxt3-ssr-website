@@ -5,7 +5,7 @@
     ${backgroundImage ? `background-image: url('${backgroundImage}')` : ''}`"
     fluid
   >
-    <v-container class="py-12">
+    <v-container class="py-8">
       <div class="ma-auto">
         <h1 v-if="heroTitle" class="text-h3 mb-8 text-center">
           {{ heroTitle }}

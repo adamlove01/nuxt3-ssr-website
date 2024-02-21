@@ -72,8 +72,6 @@ export function validate(input, schema) {
     .options({ abortEarly: false, convert: true })
     .validate(keysObject)
 
-  console.log('errors=', result.error)
-
   return [result.error || false, result.value || false]
 }
 

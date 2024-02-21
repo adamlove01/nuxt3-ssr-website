@@ -12,7 +12,6 @@ import { clientList, serverList } from './permissions.js'
  * @returns {string|Object}
  */
 export function authorize(route, role = '*', id) {
-  console.log('--- in authorize function')
   if (!route) return 'noRouteMatch'
 
   const [vErr, v] = validate({ route, role }, authorizeSchema)
@@ -37,7 +36,6 @@ export function authorize(route, role = '*', id) {
     // Match the user route with the routes in the list, including wildcards '*'
     if (routeMatchRegex.test(v.route)) {
       // Route match found. What about the role?
-      console.log('aRoles=', aRoles, ' v.role=', v.role)
       if (aRoles !== '*' && !aRoles.includes(v.role)) return 'noRoleMatch'
       // The user's role is authorized.
       // Are there any params and conditions, eg. /{user.id:isLoggedInUser}

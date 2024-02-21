@@ -38,6 +38,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/google-fonts',
     '@pinia/nuxt',
+    "nuxt-security",
 
     // Adds vite-plugin-vuetify for tree shaking
     async (options, nuxt) => {
@@ -86,6 +87,27 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        'default-src': ["'self'"],
+        'base-uri': [process.env.BASE_URL],
+        'script-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        'style-src': [
+          "'self'",
+          "'unsafe-inline'",
+          '*.gstatic.com',
+          '*.googleapis.com',
+        ],
+        'font-src': ["'self'", '*.gstatic.com', '*.googleapis.com'],
+        'img-src': ["'self'"],
+        'connect-src': ["'self'"],
+        'form-action': ["'self'"],
+        'object-src': ["'self'"],
+      },
     },
   },
 })

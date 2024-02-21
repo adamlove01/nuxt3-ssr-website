@@ -20,8 +20,6 @@ export function checkLogin(event) {
     id: null,
   }
 
-  console.log('input=', JSON.stringify(input))
-
   // Sanitize and validate tokens
   const [vErr, v] = validate(input, authorizeSchema)
   if (vErr || !v) {
@@ -33,8 +31,6 @@ export function checkLogin(event) {
   // Use the first token that is set
   const token = v.accessToken || v.refreshToken
 
-  console.log('token=', JSON.stringify(token))
-
   // Check if user is logged in
   let loginData = {}
   try {
@@ -42,8 +38,6 @@ export function checkLogin(event) {
   } catch (err) {
     return { status: 'info', code: 'loggedOut', data: defaultData }
   }
-
-  console.log('loginData=', JSON.stringify(loginData))
 
   if (!Object.keys(loginData).length) {
     // User is logged out

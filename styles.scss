@@ -33,14 +33,12 @@ body .v-application {
   .title {
     font-family: $head-font-family !important;
     font-weight: 400 !important;
-    line-height: 2.5rem;
     letter-spacing: -0.2px !important;
   }
   .subtitle-1 {
     font-family: $head-font-family !important;
     font-size: 1.2rem !important;
     font-weight: 300 !important;
-    line-height: 2.5rem;
     letter-spacing: -0.2px !important;
   }
 
@@ -54,7 +52,6 @@ body .v-application {
     font-family: $body-font-family !important;
     font-weight: 400 !important;
     letter-spacing: 0px;
-    line-height: 1.4em;
 
     &.monospace {
       font-family: $monospace-font-family !important;
