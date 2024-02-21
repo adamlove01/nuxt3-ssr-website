@@ -1,6 +1,6 @@
 # Nuxt3 SSR Website
 
-<img src="public/docs/app-screenshot.png" />
+<img src="public/docs/demo.gif" />
 <br><br>
 
 ## Features
