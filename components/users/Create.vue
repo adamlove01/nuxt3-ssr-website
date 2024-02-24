@@ -127,11 +127,13 @@ async function submit() {
   const [vErr, v] = await validate(user.value, userSchema)
   if (vErr) return (refreshing.value = false)
 
-  const { status, code, field } = await apiFetch(`/api/users/create`, {
-    method: 'POST',
-    body: user.value,
-  })
+  return emit('done', { status: 'warning', message: 'This is a demo. Database changes are locked.' })
 
-  return emit('done', { status: status, message: translate(code, field) })
+  // const { status, code, field } = await apiFetch(`/api/users/create`, {
+  //   method: 'POST',
+  //   body: user.value,
+  // })
+
+  // return emit('done', { status: status, message: translate(code, field) })
 }
 </script>

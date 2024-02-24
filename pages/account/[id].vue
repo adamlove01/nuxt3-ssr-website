@@ -20,7 +20,7 @@
             variant="outlined"
             rounded
             class="mt-6"
-            @click="modal.update = true"
+            @click="updateModal = true"
           >
             {{ $t('account.editProfile') }}
           </v-btn>
@@ -33,8 +33,8 @@
         </v-card>
       </div>
 
-      <v-dialog v-model="modal.update" max-width="500px">
-        <users-update :user-data="user" @done="close($event, 'update')" />
+      <v-dialog v-model="updateModal" max-width="500px">
+        <users-update :user-data="user" @done="close($event)" />
       </v-dialog>
     </v-container>
   </v-container>
@@ -46,7 +46,7 @@ const session = useSessionStore()
 const login = useLoginStore()
 
 const user = ref([])
-const modal = ref({ create: false, update: false, delete: false })
+const updateModal = ref(false)
 
 async function getUser() {
   const {
@@ -62,6 +62,7 @@ async function getUser() {
   }
 
   user.value = details.row
+  console.log('User details=', user.value)
 }
 
 onMounted(async () => {
@@ -70,9 +71,12 @@ onMounted(async () => {
   getUser()
 })
 
-function close(result, type) {
-  modal.value[type] = false
-  getAllUsers()
+function close(result) {
+  if (result.status !== 'cancel') {
+    session.setBanner({ type: result.status, title: result.message })
+  }
+  updateModal.value = false
+  getUser()
 }
 </script>
 

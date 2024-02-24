@@ -33,7 +33,7 @@ The code is clear with comments so you can easily customize it for your own purp
 
 - **Sanitized & Validated input** - All input on both the client and server is sanitized & validated using the powerful Joi validation and sanitize-html libraries.
 - **User Access List** - Controls access to all pages and routes based on user type. You can change access rules for any page or server route from a single file.
-- **Secure JSON WebTokens** - Uses JWT to verify login. The accessToken stored in memory (Vuex) and the refreshToken is HttpOnly with 'expires' and 'sameSite' flags.
+- **Secure JSON WebTokens** - Uses JWT to verify login. The accessToken stored in memory (Pinia2) and the refreshToken is HttpOnly with 'expires' and 'sameSite' flags.
 
 ## Requirements
 

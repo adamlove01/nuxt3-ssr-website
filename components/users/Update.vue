@@ -141,6 +141,8 @@ async function submit() {
   )
   if (noChangesMade) return (refreshing.value = false)
 
+  // return emit('done', { status: 'warning', message: 'This is a demo. Database changes are locked.' })
+
   const { status, code, field } = await apiFetch('/api/users/update', {
     method: 'POST',
     body: user.value,
