@@ -39,9 +39,9 @@ export async function sendContactEmail(data) {
   const [err, info] = await Try(
     transporter.sendMail({
       sender: data.name,
-      from: `${data.name} <${process.env.ADMIN_EMAIL}>`,
+      from: `${data.name} <${config.ADMIN_EMAIL}>`,
       replyTo: data.email,
-      to: process.env.WEBSITE_EMAIL,
+      to: config.WEBSITE_EMAIL,
       subject: data.subject,
       html: data.message,
     })

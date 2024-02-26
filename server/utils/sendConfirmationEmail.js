@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer'
 import jwt from 'jsonwebtoken'
-import * as dotenv from 'dotenv'
-dotenv.config()
+
+const config = useRuntimeConfig()
 
 /**
  * Send Confirmation Email
@@ -15,7 +15,7 @@ export async function sendConfirmationEmail(user) {
   /** Create Json WebToken */
   const date = new Date().toISOString().replace('T', ' ').split('.')[0]
   const mail = { id: user.id, type: 'sendConfirmationEmail', created: date }
-  const token = jwt.sign(mail, process.env.TOKEN_AUTH_SECRET, {
+  const token = jwt.sign(mail, config.TOKEN_AUTH_SECRET, {
     expiresIn: '1d',
   })
 
@@ -28,7 +28,7 @@ export async function sendConfirmationEmail(user) {
    *
    * On your live server it will be a 'real' link and SHOULD be delivered okay.
    */
-  const url = `${process.env.BASE_URL}/verify?token=${token}`
+  const url = `${config.BASE_URL}/verify?token=${token}`
 
   /**
    * Create nodemailer transporter
@@ -44,18 +44,18 @@ export async function sendConfirmationEmail(user) {
    * https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html
    */
   let transporter = nodemailer.createTransport({
-    host: process.env.AWS_SMTP_REGION,
-    port: process.env.AWS_SMTP_PORT,
+    host: config.AWS_SMTP_REGION,
+    port: config.AWS_SMTP_PORT,
     auth: {
-      user: process.env.AWS_SMTP_USERNAME,
-      pass: process.env.AWS_SMTP_PASSWORD,
+      user: config.AWS_SMTP_USERNAME,
+      pass: config.AWS_SMTP_PASSWORD,
     },
   })
 
   /** Send email to the user */
   const [err, info] = await Try(
     transporter.sendMail({
-      from: `"Your Website" <${process.env.ADMIN_EMAIL}>`,
+      from: `"Your Website" <${config.ADMIN_EMAIL}>`,
       to: user.email,
       subject: 'Verify Your Account',
       html: `Hello!

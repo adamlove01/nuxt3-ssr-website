@@ -1,5 +1,5 @@
 const { defineConfig } = require('cypress')
-require('dotenv').config()
+// require('dotenv').config()
 
 async function getNuxtViteConfig() {
   const nuxt = await loadNuxt({
@@ -51,7 +51,7 @@ module.exports = defineConfig({
     },
 
     env: {
-      BASE_URL: process.env.BASE_URL
+      // BASE_URL: process.env.BASE_URL
     },
   },
 })
