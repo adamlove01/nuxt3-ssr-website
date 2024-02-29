@@ -80,7 +80,7 @@
       type="info"
       rounded="xl"
       class="mx-auto my-8 pa-7"
-      style="background-color: rgb(254 215 170)"
+      style="border: 2px solid rgb(254 215 170)"
       max-width="400"
     >
     <v-card-title class="text-h4 justify-center mb-3 text-center">This is a demo</v-card-title>

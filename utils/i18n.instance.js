@@ -13,7 +13,7 @@ const i18n = createI18n({
   globalInjection: true,
   locale: 'en_US',
   fallbackLocale: 'en_US',
-
+  warnHtmlMessage: false,
   messages: {
     en_US,
     es_MX,

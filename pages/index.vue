@@ -9,6 +9,7 @@
       :sub-title="$t('index.technology.subTitle')"
       :button-text="$t('index.technology.buttonText')"
       :background-color="session.theme === 'dark' ? '' : 'bg-my-off-white'"
+      :avatar-bg-color="session.theme === 'dark' ? '#121212' : '#F8FCFE'"
       :cards="$tm('index.technology.cards')"
     />
 
@@ -17,6 +18,7 @@
       :sub-title="$t('index.benefitsIcons.subTitle')"
       :cards="$tm('index.benefitsIcons.cards')"
       :background-image="`/img/bg_sky_${session.theme}.jpg`"
+      :background-color="session.theme === 'dark' ? '#121212' : '#F8FCFE'"
     />
 
     <SectionBenefits

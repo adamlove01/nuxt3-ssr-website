@@ -165,6 +165,7 @@
     </v-main>
     <Footer />
   </v-app>
+  <NuxtLoadingIndicator v-else />
 </template>
 
 <script setup>

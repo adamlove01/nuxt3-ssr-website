@@ -57,14 +57,6 @@ export default defineNuxtConfig({
     ssr: {
       noExternal: ['vuetify'],
     },
-    plugins: [
-      nodePolyfills({
-        overrides: {
-          // Since `fs` is not supported in browsers, we can use the `memfs` package to polyfill it.
-          fs: 'memfs',
-        },
-      }),
-    ],
   },
 
   // display options: 'auto' | 'block' | 'swap' | 'fallback' | 'optional'

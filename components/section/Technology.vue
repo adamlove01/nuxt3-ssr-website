@@ -57,6 +57,7 @@
                 rounded="1"
                 color="white"
                 style="border: 1px solid #3dbbfe"
+                :style="`background-color: ${avatarBgColor} !important`"
                 :image="card.image"
               />
             </v-card>
@@ -91,6 +92,9 @@ const props = defineProps({
     type: String,
   },
   backgroundColor: {
+    type: String,
+  },
+  avatarBgColor: {
     type: String,
   },
 })

@@ -62,7 +62,6 @@ async function getUser() {
   }
 
   user.value = details.row
-  console.log('User details=', user.value)
 }
 
 onMounted(async () => {

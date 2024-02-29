@@ -20,8 +20,8 @@
             <div class="d-flex flex-column align-center">
               <v-avatar
                 size="120"
-                color="white"
                 style="border: 1px solid #3dbbfe"
+                :style="`background-color: ${backgroundColor}`"
                 class="mt-4"
               >
                 <v-icon size="50" :color="card.iconColor" :icon="card.icon" />

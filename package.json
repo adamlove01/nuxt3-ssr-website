@@ -11,11 +11,10 @@
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "cypress": "^13.6.4",
-    "nuxt": "^3.8.2",
+    "nuxt": "^3.10.3",
     "nuxt-security": "^1.1.2",
     "sass": "^1.61.0",
     "tailwindcss": "^3.4.1",
-    "vite-plugin-node-polyfills": "^0.17.0",
     "vue-i18n": "^9.4.1"
   },
   "dependencies": {
@@ -23,14 +22,15 @@
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/core": "^10.7.0",
     "bcryptjs": "^2.4.3",
+    "browserify-fs": "^1.0.0",
     "dotenv": "^16.3.1",
     "joi": "^17.9.1",
     "jsonwebtoken": "^9.0.0",
     "knex": "^2.4.2",
-    "memfs": "^4.6.0",
     "nodemailer": "^6.9.2",
     "pg": "^8.10.0",
-    "sanitize-html": "^2.10.0",
+    "sanitize-html": "1.27.5",
+    "source-map-js": "^1.0.2",
     "vite-plugin-vuetify": "^1.0.2",
     "vuetify": "^3.3.15"
   }

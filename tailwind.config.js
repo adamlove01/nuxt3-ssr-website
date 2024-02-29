@@ -13,7 +13,8 @@ module.exports = {
       colors: {
         'my-blue': '#1976d2',
         'my-light-blue': '#3dbbfe',
-        'my-off-white': '#f3f4f6'
+        'my-off-white': '#f3f4f6',
+        'my-off-black': '#050123'
       },
     },
   },
