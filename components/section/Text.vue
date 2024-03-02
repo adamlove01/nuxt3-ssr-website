@@ -50,10 +50,6 @@ const props = defineProps({
     type: String,
     default: '',
   },
-  backgroundImage: {
-    type: String,
-    default: '',
-  },
   backgroundColor: {
     type: String,
     default: '',

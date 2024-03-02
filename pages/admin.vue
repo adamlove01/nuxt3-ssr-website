@@ -87,10 +87,6 @@
 
 <script setup>
 import { useDebounceFn } from '@vueuse/core'
-import UsersCreate from '@/components/users/Create'
-import UsersUpdate from '@/components/users/Update'
-import UsersDelete from '@/components/users/Delete'
-
 useHead({ title: pageHead('admin') })
 
 const session = useSessionStore()

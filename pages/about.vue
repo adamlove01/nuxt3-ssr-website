@@ -12,7 +12,7 @@
       :text="$t('about.what.text')"
     />
     <SectionTeamIcons
-      :hero-title="$t('about.team.heroTitle')"
+      :heroTitle="$t('about.team.heroTitle')"
       :cards="$tm('about.team.cards')"
     />
   </div>

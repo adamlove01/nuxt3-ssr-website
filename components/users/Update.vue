@@ -20,6 +20,7 @@
                 v-model="user.name"
                 variant="outlined"
                 class="mb-2"
+                autocomplete="name"
                 :label="$t('fields.fullName')"
                 :rules="rules.name"
                 required
@@ -29,25 +30,10 @@
                 v-model="user.email"
                 variant="outlined"
                 class="mb-2"
+                autocomplete="email"
                 :label="$t('fields.email')"
                 :rules="rules.email"
                 required
-              />
-
-              <v-text-field
-                v-model="user.password"
-                variant="outlined"
-                class="mb-2"
-                :label="$t('fields.password')"
-                :rules="rules.password"
-                :append-inner-icon="
-                  showPassword ? 'mdi-eye-outline' : 'mdi-eye-off-outline'
-                "
-                :type="showPassword ? 'text' : 'password'"
-                :hint="$t('users.atLeast', { limit: 8 })"
-                counter
-                required
-                @click:append-inner="showPassword = !showPassword"
               />
             </v-col>
 
@@ -113,8 +99,6 @@ const user = ref({
   id: u.id,
   name: u.name,
   email: u.email,
-  password: u.password,
-  image: u.image,
   role: u.role,
   status: u.status,
 })
@@ -139,6 +123,7 @@ async function submit() {
   const noChangesMade = Object.keys(user.value).every(
     (key) => user.value[key] === u[key]
   )
+
   if (noChangesMade) return (refreshing.value = false)
 
   return emit('done', { status: 'warning', message: 'This is a demo. Database changes are locked.' })

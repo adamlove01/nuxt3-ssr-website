@@ -41,7 +41,7 @@ export const userSchema = {
   image: Joi.string()
     .custom(sanitize)
     .trim()
-    .min(4)
+    .min(5)
     .messages(msg('image', 'string', ['min4'])),
   role: Joi.string()
     .trim()

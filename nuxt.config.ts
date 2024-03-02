@@ -23,7 +23,9 @@ export default defineNuxtConfig({
     ADMIN_EMAIL: process.env.ADMIN_EMAIL,
     WEBSITE_EMAIL: process.env.WEBSITE_EMAIL,
     // Public keys that are exposed to the client
-    public: {},
+    public: {
+      NODE_ENV: process.env.NODE_ENV,
+    },
   },
 
   css: ['@/styles.scss', 'vuetify/styles', '~/assets/css/main.css'],
