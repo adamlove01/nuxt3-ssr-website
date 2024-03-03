@@ -26,6 +26,9 @@ export default defineNuxtConfig({
     public: {
       NODE_ENV: process.env.NODE_ENV,
     },
+    app: {
+      baseURL: process.env.BASE_URL
+    }
   },
 
   css: ['@/styles.scss', 'vuetify/styles', '~/assets/css/main.css'],
