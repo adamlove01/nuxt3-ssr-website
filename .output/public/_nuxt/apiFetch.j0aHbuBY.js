@@ -1,0 +1,1 @@
+import{v as d}from"./entry.Dm-Fm04a.js";async function h(a,e={}){const r=d();e.headers=e.headers||{},e.headers.Authorization=r.token,e.watch=!1;let t={};try{t=await $fetch(a,e)}catch{return{status:"error",code:"unknown",field:null,details:null}}const{status:n,code:s,field:c,details:l}=t;return{status:n,code:s,field:c,details:l}}export{h as a};
