@@ -8,7 +8,7 @@ exports.seed = function (knex) {
           name: 'admin',
           email: 'admin@admin.com',
           password:
-            '$2a$10$sAI76ulPDz2Kud6Aau1AUemMiy7JzW6KD9.SlFCHOWysIb0GCiQp6',
+            '$2a$10$DPxJX9kPR095ka0.uToyruKwOcjyyKy80/m065DC9bgr1lU738JJ6',
           image: 'img/users/default.png',
           role: 'admin',
           status: 'active',

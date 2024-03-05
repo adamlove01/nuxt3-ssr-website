@@ -75,6 +75,22 @@
         >{{ $t('all.buttons.signUpNow') }}</v-btn
       >
     </div>
+
+    <v-card
+      type="info"
+      rounded="xl"
+      class="mx-auto my-8 pa-7"
+      style="border: 2px solid rgb(254 215 170)"
+      max-width="400"
+    >
+    <v-card-title class="text-h4 justify-center mb-3 text-center">This is a demo</v-card-title>
+      <p class="text-h6">Admin Login</p>
+      <v-icon size="18" color="rgb(234 88 12)" class="mr-1" icon="mdi-email" />admin@admin.com
+      <v-icon size="18" color="rgb(234 88 12)" class="ml-10 mr-1" icon="mdi-lock" />admin123
+      <p class="text-h6 mt-3">Client Login</p>
+      <v-icon size="18" color="rgb(234 88 12)" class="mr-1" icon="mdi-email" />leeloo@mydomain.com
+      <v-icon size="18" color="rgb(234 88 12)" class="ml-2 mr-1" icon="mdi-lock" />leeloo123
+    </v-card>
   </v-container>
 </template>
 

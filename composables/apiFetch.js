@@ -8,7 +8,6 @@ export async function apiFetch(path, options = {}) {
   options.headers.Authorization = login.token
   options.watch = false
 
-  // const { data, error } = await useFetch(path, options)
   let data = {}
   try {
     data = await $fetch(path, options)

@@ -67,13 +67,15 @@ function cancel() {
 async function submit() {
   refreshing.value = true
 
-  const { status, code, field } = await apiFetch(
-    `/api/users/delete/${user.value.id}`,
-    {
-      method: 'DELETE',
-    }
-  )
+  return emit('done', { status: 'warning', message: 'This is a demo. Database changes are locked.' })
 
-  return emit('done', { status: status, message: translate(code, field) })
+  // const { status, code, field } = await apiFetch(
+  //   `/api/users/delete/${user.value.id}`,
+  //   {
+  //     method: 'DELETE',
+  //   }
+  // )
+
+  // return emit('done', { status: status, message: translate(code, field) })
 }
 </script>
