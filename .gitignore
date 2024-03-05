@@ -5,7 +5,7 @@ node_modules
 .cache
 .output
 .output/public/docs/demo.gif
-.env
+.env*
 dist
 .DS_Store
 .vscode
