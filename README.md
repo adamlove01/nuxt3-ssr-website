@@ -42,7 +42,7 @@ The code is clear with comments so you can easily customize it for your own purp
 
 ## Requirements
 
-- Node > v14.15.1
+- Node > v18.17.1
 - Local database (Postgres, MSSQL, MySQL, MariaDB, Oracle, or Amazon Redshift)
 
 ## Project Setup
