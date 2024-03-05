@@ -1,4 +1,0 @@
-const VCalendarDay = ".v-calendar-day{display:flex;flex-direction:column;position:relative}.v-calendar-weekly .v-calendar__container{display:grid}.v-calendar-weekly .v-calendar__container.days__7{grid-template-columns:repeat(7,1fr)}.v-calendar-weekly .v-calendar__container.days__6{grid-template-columns:repeat(6,1fr)}.v-calendar-weekly .v-calendar__container.days__5{grid-template-columns:repeat(5,1fr)}.v-calendar-weekly .v-calendar__container.days__4{grid-template-columns:repeat(4,1fr)}.v-calendar-weekly .v-calendar__container.days__3{grid-template-columns:repeat(3,1fr)}.v-calendar-weekly .v-calendar__container.days__2{grid-template-columns:repeat(2,1fr)}.v-calendar-weekly .v-calendar__container.days__0,.v-calendar-weekly .v-calendar__container.days__1{grid-template-columns:repeat(1,1fr)}";
-
-export { VCalendarDay as V };
-//# sourceMappingURL=entry-styles-99.mjs-BQpG4dQQ.mjs.map

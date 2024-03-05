@@ -1,9 +1,9 @@
-#node_modules
+node_modules
 *.log*
 .nuxt
 .nitro
 .cache
-#.output
+.output
 .output/public/docs/demo.gif
 .env
 dist
