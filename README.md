@@ -134,7 +134,7 @@ go to `localhost:3000` in your browser to see the project running.
 ## Admin login
 
 By default you can log in as an Admin user:  
-Email: `admin@mydomain.com`  
+Email: `admin@admin.com`  
 Password: `admin123`
 
 You should create a new admin user and then delete the default one when you go to production!
